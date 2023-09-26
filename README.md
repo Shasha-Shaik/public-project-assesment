@@ -1,5 +1,15 @@
 Project Name: Text Analyzer and Search Web Application
 
+Project completion screenshots:
+
+![Screenshot (1)](https://github.com/Shasha-Shaik/a/assets/127418219/0ace3188-2667-47c9-85d0-b9762766205e)
+
+![Screenshot (2)](https://github.com/Shasha-Shaik/a/assets/127418219/76b40c29-df7c-4db6-99d7-fc5284bf24da)
+
+![Screenshot (3)](https://github.com/Shasha-Shaik/a/assets/127418219/ca872c70-a5af-452a-9f27-11f361bef851)
+
+![Screenshot (4)](https://github.com/Shasha-Shaik/a/assets/127418219/ed11f4f7-0ec9-4888-af2f-53600cf3b127)
+
 Description: The Text Analyzer and Search Web Application is a web-based tool designed to analyze text files (.txt) and provide various text-related functionalities. It allows users to upload text files, perform word frequency analysis, identify co-occurring word pairs, and conduct keyword searches within the text.
 
 Key Features:
@@ -35,23 +45,46 @@ Technologies Used:
     File Upload: Multer library for handling file uploads.
     Version Control: Git and GitHub for source code management.
 
-    License: MIT License for open-source distribution.
-
-Getting Started:
-
-    To run the application locally, clone the repository, install the required dependencies, and start the server using the provided npm scripts.
-
 Usage:
 
     Users can access the application in a web browser.
     After uploading a text file, the application provides word frequency analysis, co-occurring words, and keyword search functionality.
     Users can explore and analyze textual data interactively through the user interface.
 
-Contributing:
+Analyze text files and return the following information:
 
-    The project is open for contributions. Developers and contributors can follow the provided contributing guidelines for making improvements or adding features.
+    The top 5 most frequently occurring words.
+    The top 5 pairs of adjacent words (co-occurring words).
+    The frequency of each word in the text.
+    Display the analysis results on the frontend as cards, with 5 cards showing the most frequent words and 5 cards showing themost co-occurring words.
+    Implement a client-side keyword search feature to filter the displayed cards based on keywords.
+    Visualize the frequency of words using optional graphs.
 
-License:
+How to Set Up the Project:
 
-    This project is open-source and is released under the MIT License, which allows for free use, modification, and distribution.
-    This Text Analyzer and Search Web Application project is a useful tool for individuals or teams working with textual data. It simplifies the process of extracting insights from text files and provides an accessible web-based interface for text analysis tasks.
+To set up and run the project, follow these steps:
+
+    Navigate to the Project Directory
+
+Change your working directory to the project folder:
+
+    cd text_analyzer_project
+
+Install Dependencies:
+
+    Install the project dependencies by running:
+
+    npm install
+
+Start the Node.js server by running the following command:
+
+    node src/server.js
+    This will start the backend server, and it will be accessible at http://localhost:3000.
+
+Open the Frontend Interface:
+
+    Open a web browser and navigate to http://localhost:3000 to access the frontend interface of the text analyzer project.
+
+Project in Action:
+
+    You can now use the web interface to upload text files, analyze them, and view the results. The top 5 most frequently occurring words and co-occurring words will be displayed as cards on the page. You can also use the keyword search feature to filter the cards based on specific keywords.
